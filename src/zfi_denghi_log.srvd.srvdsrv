@@ -1,0 +1,7 @@
+@EndUserText.label: 'Maintain đề nghị'
+define service Zfi_denghi_log {
+  expose zfi_i_denghi_log;
+  expose zfi_i_denghi_i_log;
+  expose ZFI_I_DENGHI_ITEMCUSTOM;
+  expose ZFI_I_DENGHI_IDCUSTOM;
+}

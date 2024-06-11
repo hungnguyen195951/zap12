@@ -1,0 +1,10 @@
+@EndUserText.label: 'Access control for log đề ngị'
+@MappingRole: true
+define role ZFI_AC_DENGHI_LOG {
+    grant 
+        select
+            on
+                ZFI_I_DENGHI_LOG
+                    where
+                        (AccountingDocCreatedByUser) = aspect pfcg_auth(ZUSNAM, ZBYUSER , ACTVT = '03' );
+}

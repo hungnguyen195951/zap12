@@ -1,0 +1,125 @@
+@Metadata.layer: #CORE
+@UI.headerInfo: {
+      typeName: 'Chứng từ đề nghị',
+      title: {
+            value: 'zdenghi',
+            type: #STANDARD
+      },
+      description: {
+        value: 'lydothanhtoan',
+        type: #STANDARD
+     }
+}
+annotate view zfi_i_denghi_log with
+{
+
+  @UI: {
+        facet: [ {  id: 'information',
+                    type: #COLLECTION,
+                    label: 'Information',
+                    position: 10 },
+                 {  parentId: 'information',
+                    id: 'headerInfomation',
+                    type: #IDENTIFICATION_REFERENCE,
+                    purpose: #STANDARD,
+                    position: 10 }
+                ] }
+  @UI: { lineItem: [{ position: 30 }],
+         selectionField: [ { position: 10 } ] }
+  zdenghi;
+  @UI: { lineItem: [{ position: 40 }],
+         selectionField: [ { position: 20 } ] }
+  gjahr;
+  @UI: { lineItem: [{ position: 10 }],
+         selectionField: [ { position: 30 } ] }
+  companycode;
+  @UI: { lineItem: [{ position: 10 }] }
+  is_del;
+  @UI.identification: [{ position: 10 }]
+  @UI: { lineItem: [{ position: 10 }] }
+  accountingdocument;
+  @UI: { lineItem: [{ position: 60 }] }
+  ctdenghi;
+  @UI: { lineItem: [{ position: 150 }] }
+  @EndUserText: { label: 'Customer/Vendor' }
+  @UI.identification: [{ position: 10 }]
+  @UI.selectionField: [{ position: 50 }]
+  account;
+  @UI: { lineItem: [{ position: 70 }] }
+  @UI.identification: [{ position: 30 }]
+  @UI.selectionField: [{ position: 60 }]
+  pst_user;
+  @UI: { lineItem: [{ position: 80 }] }
+  @UI.identification: [{ position:410 }]
+  @UI.selectionField: [{ position: 70 }]
+  pst_date;
+  @UI: { lineItem: [{ position: 120 }] }
+  @EndUserText: { label: 'Người đề nghị' }
+  @UI.identification: [{ position: 50 }]
+  nguoidenghi;
+  @UI: { lineItem: [{ position: 130 }] }
+  @EndUserText: { label: 'Đơn vị công tác' }
+  @UI.identification: [{ position: 60 }]
+  donvicongtac;
+  @UI: { lineItem: [{ position: 140 }] }
+  @UI.identification: [{ position: 70 }]
+  @EndUserText: { label: 'Lý do thanh toán' }
+  lydothanhtoan;
+  @UI.identification: [{ position: 80 }]
+  @UI: { lineItem: [{ position: 150 }] }
+  @EndUserText: { label: 'Người nhận' }
+  nguoinhan;
+  @UI.identification: [{ position: 90 }]
+  @UI: { lineItem: [{ position: 160 }] }
+  @EndUserText: { label: 'Tên ngân hàng' }
+  tennganhang;
+  @UI.identification: [{ position: 100 }]
+  @UI: { lineItem: [{ position: 170 }] }
+  @EndUserText: { label: 'Số tài khoản nhận' }
+  sotaikhoannhan;
+  @UI.identification: [{ position: 110 }]
+  @UI: { lineItem: [{ position: 180 }] }
+  @EndUserText: { label: 'Hình thức thanh toán' }
+  paymentmethod;
+  @UI.identification: [{ position: 120 }]
+  @UI: { lineItem: [{ position: 190 }] }
+  @EndUserText: { label: 'Chứng từ kèm theo' }
+  ctkemtheo;
+  @UI.identification: [{ position: 130 }]
+  @UI: { lineItem: [{ position: 200 }] }
+  accountingdocumentyear;
+  @UI.identification: [{ position: 140 }]
+  @UI: { lineItem: [{ position: 210 }] }
+  accountingcompanycode;
+  @UI.identification: [{ position: 160 }]
+  @UI: { lineItem: [{ position: 230 }] }
+  accountingdocumentitem;
+  @UI.identification: [{ position: 170 }]
+  @UI: { lineItem: [{ position: 240 }] }
+  transactioncurrency;
+  @UI.identification: [{ position: 180 }]
+  @UI: { lineItem: [{ position: 250 }] }
+  vat;
+  @UI.identification: [{ position: 190 }]
+  @UI: { lineItem: [{ position: 260 }] }
+  sotiendenghi;
+  @UI.identification: [{ position: 200 }]
+  @UI: { lineItem: [{ position: 270 }] }
+  sotientruocthue;
+  @UI.identification: [{ position: 210 }]
+  @UI: { lineItem: [{ position: 280 }] }
+  supplier;
+  @UI.identification: [{ position: 220 }]
+  @UI: { lineItem: [{ position: 290 }] }
+  customer;
+  @UI.identification: [{ position: 230 }]
+  @UI: { lineItem: [{ position: 300 }] }
+  sohoadon;
+  @UI.identification: [{ position: 240 }]
+  @UI: { lineItem: [{ position: 310 }] }
+  ngayhoadon;
+  @UI.identification: [{ position: 250 }]
+  @UI: { lineItem: [{ position: 320 }] }
+  diengiai;
+
+}

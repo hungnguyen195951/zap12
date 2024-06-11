@@ -1,0 +1,11 @@
+@EndUserText.label: 'Access control đề nghị thanh toán/tạm ứng'
+@MappingRole: true
+define role ZFI_AC_DNTT_DNTU_TEST {
+    grant 
+        select
+            on
+                ZFI_I_DENGHI_FINAL
+                    where
+                        (AccountingDocCreatedByUser) = aspect pfcg_auth(ZUSNAM, ZBYUSER , ACTVT = '03' );
+                        
+}

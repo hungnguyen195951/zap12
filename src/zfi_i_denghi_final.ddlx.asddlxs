@@ -1,0 +1,69 @@
+@Metadata.layer: #CORE
+annotate view ZFI_I_DENGHI_FINAL with
+  parameters
+    @EndUserText.label: 'Open at key date'
+    P_KeyDate,
+    @EndUserText.label: 'Chứng từ'
+    p_ctu
+{
+
+  @UI.lineItem: [{ position: 10 }]
+  @UI.selectionField: [{ position: 10 }]
+  CompanyCode;
+  @UI.lineItem: [{ position: 20 }]
+  AccountingDocument;
+  @UI.selectionField: [{ position: 11 }]
+  @EndUserText.label: 'Vendor/Customer'
+  BusinessPartner;
+  @UI.lineItem: [{ position: 30 }]
+  FiscalYear;
+  @UI: { lineItem: [{ position: 31, criticalityRepresentation: #WITH_ICON , criticality: 'StatusCritical' }] }
+  @EndUserText.label: 'Status'
+  Status;
+  @UI.lineItem: [{ position: 35 }]
+  AccountingDocumentType;
+  @UI.lineItem: [{ position: 36 }]
+  @UI.selectionField: [{position: 10  }]
+  AccountingDocCreatedByUser;
+  @UI.lineItem: [{ position: 40 }]
+  DocumentReferenceID;
+  @UI.lineItem: [{ position: 50 }]
+  PostingDate;
+  @UI.lineItem: [{ position: 60 }]
+  DocumentDate;
+  @UI.lineItem: [{ position: 70 }]
+  Customer;
+  @UI.lineItem: [{ position: 80 }]
+  Supplier;
+  @UI.lineItem: [{ position: 90 }]
+  AssignmentReference;
+  @UI.lineItem: [{ position: 100 }]
+  FinancialAccountType;
+  @UI.lineItem: [{ position: 110 }]
+  DocItemType;
+  @UI.lineItem: [{ position: 120, label: 'Số dư công nợ tạm ứng hiện tại' }]
+  @EndUserText.label: 'Số dư công nợ tạm ứng hiện tại'
+  soDuCongNoTamUng;
+  @UI.lineItem: [{ position: 120, label: 'Thời hạn thanh toán tiền tạm ứng' }]
+  @EndUserText.label: 'Thời hạn thanh toán tiền tạm ứng'
+  DueCalculationBaseDate;
+  @UI.lineItem: [{ position: 130, label: 'Số tiền trước thuế' }]
+  @EndUserText.label: 'Số tiền trước thuế'
+  soTienTruocThue;
+  @UI.lineItem: [{ position: 140, label: 'VAT' }]
+  VAT;
+  @UI.lineItem: [{ position: 150, label: 'Số tiền đề nghị' }]
+  @EndUserText.label: 'Số tiền đề nghị'
+  soTienDeNghi;
+  @UI.lineItem: [{ position: 155, label: 'Số tiền tạm ứng', hidden: #(TamUngVisible) }]
+  @EndUserText.label: 'Số tiền tạm ứng'
+  @UI.fieldGroup: [{ label: 'Số tiền tạm ứng', hidden: #(TamUngVisible) }]
+
+  soTienTamUng;
+  @UI.hidden: true
+  StatusCritical;
+  @UI.lineItem: [{ position: 160, label: 'Diễn giải' }]
+  @EndUserText.label: 'Diễn giải'
+  DienGiai;
+
+}

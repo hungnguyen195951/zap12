@@ -1,0 +1,25 @@
+managed implementation in class zbp_fi_i_denghi_log unique;
+strict ( 2 );
+
+define behavior for zfi_i_denghi_log //alias <alias_name>
+persistent table zfi_tb_denghi
+lock master
+authorization master ( instance )
+{
+ // create;
+  update;
+ // delete;
+//  association _item { create; }
+}
+
+//define behavior for zfi_i_denghi_i_log //alias <alias_name>
+//persistent table zfi_tb_denghi_i
+//lock dependent by _header
+//authorization dependent by _header
+////etag master <field_name>
+//{
+//  update;
+// // delete;
+//  field ( readonly ) zdenghi, gjahr;
+//  association _header;
+//}

@@ -1,0 +1,5 @@
+@EndUserText.label: 'Đề nghị thanh toán, đề nghị tạm ứng'
+define service Zfi_dntt_dntu {
+  expose ZFI_I_DENGHI_FINAL;
+  expose I_BusinessPartnerBank;
+}

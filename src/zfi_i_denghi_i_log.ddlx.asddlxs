@@ -1,0 +1,83 @@
+@Metadata.layer: #CORE
+@UI.headerInfo: {
+      typeName: 'Chứng từ đề nghị',
+      title: {
+            value: 'zdenghi',
+            type: #STANDARD
+      },
+      description: {
+        value: 'item',
+        type: #STANDARD
+     }
+}
+annotate view zfi_i_denghi_i_log with
+{
+  @UI: {facet: [ {  id: 'itemInformation',
+                      type: #COLLECTION,
+                      label: 'Information',
+                      position: 10 },
+                   {  parentId: 'itemInformation',
+                      id: 'itemInfomationID',
+                      type: #IDENTIFICATION_REFERENCE,
+                      purpose: #STANDARD,
+                      position: 10 } ] }
+  @UI: { lineItem: [{ position: 10 }] }
+  @UI.identification: [{ position: 10 }]
+  zdenghi;
+  @UI: { lineItem: [{ position: 20 }] }
+  @UI.identification: [{ position: 20 }]
+  gjahr;
+  @UI: { lineItem: [{ position: 30 }] }
+  @UI.identification: [{ position: 30 }]
+  item;
+  @EndUserText: { label: 'Line item' }
+  @UI.identification: [{ position: 40 }]
+  @UI: { lineItem: [{ position: 40 }] }
+  accountingdocumentyear;
+  @UI.identification: [{ position: 50 }]
+  @UI: { lineItem: [{ position: 50 }] }
+  accountingcompanycode;
+  @UI.identification: [{ position: 60 }]
+  @UI: { lineItem: [{ position: 60 }] }
+  accountingdocument;
+  @UI.hidden: true
+  accountingdocumentitem;
+  @UI.identification: [{ position: 70 }]
+  @UI: { lineItem: [{ position: 80 }] }
+  @EndUserText: { label: 'Currency' }
+  transactioncurrency;
+  @UI.identification: [{ position: 80 }]
+  @UI: { lineItem: [{ position: 90 }] }
+  @EndUserText: { label: 'Thuế' }
+  vat;
+  @UI.identification: [{ position: 100 }]
+  @UI: { lineItem: [{ position: 100 }] }
+  @EndUserText: { label: 'Số tiền đề nghị' }
+  sotiendenghi;
+  @UI.identification: [{ position: 110 }]
+  @UI: { lineItem: [{ position: 110 }] }
+  @EndUserText: { label: 'Số tiền trước thuế' }
+  sotientruocthue;
+  @UI.identification: [{ position: 120 }]
+  @UI: { lineItem: [{ position: 120 }] }
+  @EndUserText: { label: 'Supplier' }
+  supplier;
+  @UI.identification: [{ position: 130 }]
+  @UI: { lineItem: [{ position: 130 }] }
+  @EndUserText: { label: 'Customer' }
+  customer;
+  @UI.identification: [{ position: 140 }]
+  @UI: { lineItem: [{ position: 140 }] }
+  @EndUserText: { label: 'Số hoá đơn' }
+  sohoadon;
+  @UI.identification: [{ position: 150 }]
+  @UI: { lineItem: [{ position: 150 }] }
+  @EndUserText: { label: 'Ngày hoá đơn' }
+  ngayhoadon;
+  @UI.identification: [{ position: 160 }]
+  @UI: { lineItem: [{ position: 160 }] }
+  @EndUserText: { label: 'Diễn giải' }
+  diengiai;
+
+
+}

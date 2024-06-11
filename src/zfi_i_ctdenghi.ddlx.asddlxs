@@ -1,0 +1,10 @@
+@Metadata.layer: #CORE
+annotate view zfi_i_ctdenghi
+    with 
+{
+    @UI.lineItem: [{ position: 10, label: ''}]
+    value_low;
+    @UI.lineItem: [{ position: 20, label: 'Chứng từ'}]
+    text;
+    
+}

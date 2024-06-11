@@ -1,0 +1,4 @@
+@EndUserText.label: 'zfi_test_denghi'
+define service Zfi_test_denghi {
+  expose ZFI_I_DENGHI_FINAL;
+}
